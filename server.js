@@ -28,6 +28,12 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {'Content-Type' : 'text/html'});
         res.end(data);
       })
+    } else if (req.url === '/contact.html') {
+      fs.readFile('./public/contact.html', 'UTF-8', (err,data)=> {
+        if(err) throw err;
+        res.writeHead(200, {'Content-Type' : 'text/html'});
+        res.end(data);
+      })
     }
   } //method
 
