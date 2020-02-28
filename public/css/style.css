@@ -5,9 +5,11 @@
 }
 
 body {
-  background : pink;
+  background : #FDF2E9  ;
 }
 
+
 a {
-  padding : 10px;
+  font-size: 2rem;
+  color : black;
 }
